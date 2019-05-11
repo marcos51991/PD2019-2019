@@ -57,13 +57,13 @@ public class TestServlet extends HttpServlet {
 		//		}
 		//	});		
 
-		//-- Strams: iteracion lamda
-		//Stream.of(context.getBeanDefinitionNames())
-		//	.forEach( pw::println );		
-
 		//-- Strams: iteracion referencia a metodo
 		Stream.of(context.getBeanDefinitionNames())
-			.forEach( s->pw.println(s) );		
+			.forEach( pw::println );		
+
+		//-- Strams: iteracion lamda
+		//Stream.of(context.getBeanDefinitionNames())
+		//	.forEach( s->pw.println(s) );		
 		
 		HolaMundo servicio = context.getBean( HolaMundo.class );
 	 
