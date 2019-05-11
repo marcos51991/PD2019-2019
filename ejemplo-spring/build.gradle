@@ -1,0 +1,15 @@
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'java-library'
+}
+
+repositories {
+    // Use jcenter for resolving your dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+}
+
+dependencies {
+	compile group: 'org.springframework', name: 'spring-context', version: '5.1.6.RELEASE'
+
+}
